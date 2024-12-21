@@ -1,9 +1,16 @@
-import React from 'react'
+import HeroSection from '@/components/HeroSection';
+import Impact from '@/components/Impact';
+import Introduction from '@/components/Introduction';
+import React from 'react';
 
-const Home = () => {
+function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <HeroSection />
+      <Introduction />
+      <Impact/>
+    </>
+  );
 }
 
-export default Home
+export default Home;
