@@ -15,11 +15,14 @@ export default function Works() {
       {/* Hero Section */}
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold tracking-tight mb-4">
-          Our Services & Programs
+          The Adjumani Soul Center: A Beacon of Hope
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          The Adjumani Project provides essential healthcare, education, and
-          community support services to empower and transform lives in Uganda.
+          The Adjumani Soul Center is a comprehensive facility designed to
+          address the urgent needs of the region. It combines medical care,
+          spiritual training, and public health resources to create a
+          sustainable solution for the challenges faced by the people of
+          Adjumani. The center will include:
         </p>
       </div>
 
@@ -33,7 +36,9 @@ export default function Works() {
             </div>
             <CardTitle>Maternity & Child Delivery Center</CardTitle>
             <CardDescription>
-              Comprehensive maternal healthcare services
+              To provide accessible and life-saving maternal and child
+              healthcare services, addressing the region’s high maternal and
+              infant mortality rates.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -45,25 +50,11 @@ export default function Works() {
                 alt="Maternity center facilities"
                 className="rounded-lg object-cover w-full mb-4"
               />
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div className="text-center p-4 bg-muted rounded-lg">
-                  <div className="text-2xl font-bold">500+</div>
-                  <div className="text-sm text-muted-foreground">
-                    Deliveries per year
-                  </div>
-                </div>
-                <div className="text-center p-4 bg-muted rounded-lg">
-                  <div className="text-2xl font-bold">24/7</div>
-                  <div className="text-sm text-muted-foreground">
-                    Emergency care
-                  </div>
-                </div>
-              </div>
               <ul className="space-y-2">
-                <li>• Emergency C-section capabilities</li>
-                <li>• Prenatal & postnatal care</li>
-                <li>• Family planning services</li>
-                <li>• Maternal health education</li>
+                <li>• Capacity to Care for 50-100 Maternity Patients</li>
+                <li>• C-Section and Emergency Surgery Capabilities</li>
+                <li>• Postnatal and Prenatal Care</li>
+                <li>• Educational and Family Planning Programs</li>
               </ul>
             </div>
           </CardContent>
@@ -77,7 +68,9 @@ export default function Works() {
             </div>
             <CardTitle>Soul Winners Bible College</CardTitle>
             <CardDescription>
-              Training tomorrow's spiritual leaders
+              To train and equip individuals to become evangelists and
+              ministers, spreading the Gospel and empowering communities through
+              biblical knowledge and spiritual leadership.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -96,10 +89,9 @@ export default function Works() {
                 </TabsList>
                 <TabsContent value="programs" className="space-y-2">
                   <ul className="space-y-2">
-                    <li>• Certificate in Biblical Studies</li>
-                    <li>• Diploma in Theology</li>
-                    <li>• Bachelor of Divinity</li>
-                    <li>• Community Leadership Training</li>
+                    <li>• Certificate and Diploma Programs</li>
+                    <li>• Short Courses</li>
+                    <li>• Affiliations with Online Universities</li>
                   </ul>
                 </TabsContent>
                 <TabsContent value="partnerships" className="space-y-2">
@@ -123,7 +115,8 @@ export default function Works() {
             </div>
             <CardTitle>Malaria & Diabetes Resource Center</CardTitle>
             <CardDescription>
-              Comprehensive treatment and prevention
+              To combat the region’s overwhelming burden of malaria and diabetes
+              through education, prevention, and treatment.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -152,10 +145,11 @@ export default function Works() {
               <div className="space-y-2">
                 <h4 className="font-semibold">Our Services:</h4>
                 <ul className="space-y-2">
-                  <li>• Malaria testing and treatment</li>
-                  <li>• Diabetes management</li>
-                  <li>• Prevention education</li>
-                  <li>• Community health worker training</li>
+                  <li>• Diagnosis and Treatment</li>
+                  <li>• Prevention Programs</li>
+                  <li>• Emergency Response Unit</li>
+                  <li>• Health Education Campaigns</li>
+                  <li>• Medication Distribution</li>
                 </ul>
               </div>
             </div>

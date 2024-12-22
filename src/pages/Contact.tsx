@@ -1,22 +1,43 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Instagram,
+  Youtube,
+  Linkedin,
+} from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { Textarea } from '@/components/ui/textarea';
 
 export default function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-8 md:py-12 flex flex-col items-center">
-      <div className="grid gap-8 md:grid-cols-2 w-full max-w-4xl pt-40">
+      <div className="grid gap-8 md:grid-cols-2 w-full max-w-4xl pt-16 md:pt-40">
         {/* Contact Form Section */}
         <Card className="w-full">
           <CardHeader>
             <CardTitle>Get in Touch</CardTitle>
             <CardDescription>
-              We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
+              We'd love to hear from you. Fill out the form below and we'll get
+              back to you as soon as possible.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -28,7 +49,12 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" placeholder="your@email.com" type="email" required />
+                  <Input
+                    id="email"
+                    placeholder="your@email.com"
+                    type="email"
+                    required
+                  />
                 </div>
               </div>
               <div className="space-y-2">
@@ -87,7 +113,7 @@ export default function ContactPage() {
                 <MapPin className="h-5 w-5 text-muted-foreground" />
                 <span>P.O. Box 123, Adjumani, Uganda</span>
               </div>
-              
+
               <div className="mt-6 space-y-2">
                 <h4 className="font-medium">Follow Us</h4>
                 <div className="flex space-x-4">

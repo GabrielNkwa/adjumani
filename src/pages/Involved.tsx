@@ -40,7 +40,7 @@ export default function Involved() {
             Join us in our mission to create positive change. Your support can
             transform lives and communities.
           </p>
-          <div className="space-x-4">
+          <div className="space-x-4 mt-6">
             <Button variant="secondary" size="lg" asChild>
               <Link to="#donate">Donate Now</Link>
             </Button>
@@ -84,45 +84,21 @@ export default function Involved() {
                         defaultValue="50"
                         className="grid grid-cols-3 gap-4"
                       >
-                        <div>
-                          <RadioGroupItem
-                            value="25"
-                            id="25"
-                            className="peer sr-only"
-                          />
-                          <Label
-                            htmlFor="25"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
-                          >
-                            $25
-                          </Label>
-                        </div>
-                        <div>
-                          <RadioGroupItem
-                            value="50"
-                            id="50"
-                            className="peer sr-only"
-                          />
-                          <Label
-                            htmlFor="50"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
-                          >
-                            $50
-                          </Label>
-                        </div>
-                        <div>
-                          <RadioGroupItem
-                            value="100"
-                            id="100"
-                            className="peer sr-only"
-                          />
-                          <Label
-                            htmlFor="100"
-                            className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
-                          >
-                            $100
-                          </Label>
-                        </div>
+                        {['25', '50', '100'].map((value) => (
+                          <div key={value}>
+                            <RadioGroupItem
+                              value={value}
+                              id={value}
+                              className="peer sr-only"
+                            />
+                            <Label
+                              htmlFor={value}
+                              className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
+                            >
+                              ${value}
+                            </Label>
+                          </div>
+                        ))}
                       </RadioGroup>
                     </div>
                     <Button className="w-full">Donate Now</Button>
@@ -147,10 +123,11 @@ export default function Involved() {
                           <SelectValue placeholder="Select amount" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="10">$10/month</SelectItem>
-                          <SelectItem value="25">$25/month</SelectItem>
-                          <SelectItem value="50">$50/month</SelectItem>
-                          <SelectItem value="100">$100/month</SelectItem>
+                          {['10', '25', '50', '100'].map((value) => (
+                            <SelectItem key={value} value={value}>
+                              ${value}/month
+                            </SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                     </div>
@@ -176,40 +153,34 @@ export default function Involved() {
             Share your skills and time to make a real difference in people's
             lives.
           </p>
-          <div className="grid gap-10 px-10 md:gap-16 lg:grid-cols-2 mx-auto">
-            <Card>
-              <CardHeader className="flex flex-row items-center gap-4">
-                <Stethoscope className="h-8 w-8" />
-                <div className="grid gap-1">
-                  <CardTitle>Medical Professionals</CardTitle>
-                  <CardDescription>
-                    Provide healthcare services and medical support
-                  </CardDescription>
-                </div>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader className="flex flex-row items-center gap-4">
-                <GraduationCap className="h-8 w-8" />
-                <div className="grid gap-1">
-                  <CardTitle>Educators</CardTitle>
-                  <CardDescription>
-                    Share knowledge and teach valuable skills
-                  </CardDescription>
-                </div>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader className="flex flex-row items-center gap-4">
-                <Church className="h-8 w-8" />
-                <div className="grid gap-1">
-                  <CardTitle>Evangelists</CardTitle>
-                  <CardDescription>
-                    Spread hope and faith in communities
-                  </CardDescription>
-                </div>
-              </CardHeader>
-            </Card>
+          <div className="grid gap-10 px-4 md:px-10 md:gap-16 lg:grid-cols-2 mx-auto">
+            {[
+              {
+                icon: <Stethoscope className="h-8 w-8" />,
+                title: 'Medical Professionals',
+                description: 'Provide healthcare services and medical support',
+              },
+              {
+                icon: <GraduationCap className="h-8 w-8" />,
+                title: 'Educators',
+                description: 'Share knowledge and teach valuable skills',
+              },
+              {
+                icon: <Church className="h-8 w-8" />,
+                title: 'Evangelists',
+                description: 'Spread hope and faith in communities',
+              },
+            ].map(({ icon, title, description }) => (
+              <Card key={title}>
+                <CardHeader className="flex flex-row items-center gap-4">
+                  {icon}
+                  <div className="grid gap-1">
+                    <CardTitle>{title}</CardTitle>
+                    <CardDescription>{description}</CardDescription>
+                  </div>
+                </CardHeader>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -224,33 +195,32 @@ export default function Involved() {
             Join forces with us to create lasting impact
           </p>
           <div className="grid gap-6 mt-8 md:grid-cols-3 mx-auto">
-            <Card>
-              <CardHeader>
-                <Heart className="w-8 h-8 mb-2" />
-                <CardTitle>Faith-based Organizations</CardTitle>
-                <CardDescription>
-                  Partner with us in ministry and outreach programs
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <Users className="w-8 h-8 mb-2" />
-                <CardTitle>NGOs</CardTitle>
-                <CardDescription>
-                  Collaborate on community development projects
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <Handshake className="w-8 h-8 mb-2" />
-                <CardTitle>Corporate Investors</CardTitle>
-                <CardDescription>
-                  Support sustainable community initiatives
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            {[
+              {
+                icon: <Heart className="w-8 h-8 mb-2" />,
+                title: 'Faith-based Organizations',
+                description:
+                  'Partner with us in ministry and outreach programs',
+              },
+              {
+                icon: <Users className="w-8 h-8 mb-2" />,
+                title: 'NGOs',
+                description: 'Collaborate on community development projects',
+              },
+              {
+                icon: <Handshake className="w-8 h-8 mb-2" />,
+                title: 'Corporate Investors',
+                description: 'Support sustainable community initiatives',
+              },
+            ].map(({ icon, title, description }) => (
+              <Card key={title}>
+                <CardHeader>
+                  {icon}
+                  <CardTitle>{title}</CardTitle>
+                  <CardDescription>{description}</CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -300,7 +270,7 @@ export default function Involved() {
             Your support can help us reach more communities and transform more
             lives.
           </p>
-          <div className="space-x-4">
+          <div className="space-x-4 mt-6">
             <Button variant="secondary" size="lg">
               Make a Donation
             </Button>

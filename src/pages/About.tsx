@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-24 px-6 bg-slate-900 text-white overflow-hidden h-screen ">
+      <section className="relative py-24 px-6 bg-slate-900 text-white overflow-hidden h-screen">
         <div className="absolute inset-0 z-0">
           <img
             src="/placeholder.svg?height=600&width=1200"
@@ -18,18 +18,19 @@ export default function About() {
         </div>
         <div className="container relative z-10 mx-auto max-w-5xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-40">
-            Transforming Lives in Adjumani
+            Mission Statement
           </h1>
-          <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto">
-            Our mission is to provide holistic care through healthcare,
-            education, and spiritual empowerment, transforming Adjumani into a
-            beacon of hope in East Africa.
+          <p className="text-lg md:text-2xl text-slate-200 max-w-3xl mx-auto">
+            To transform Adjumani into a haven of hope by providing holistic
+            care through healthcare, education, and spiritual empowerment,
+            bringing healing to physical, emotional, and spiritual wounds while
+            winning souls for Jesus Christ.
           </p>
         </div>
       </section>
 
       {/* Our Story Section */}
-      <section className="py-16 px-6 bg-white h-screen">
+      <section className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-12">Our Story</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -39,7 +40,7 @@ export default function About() {
                 width={400}
                 height={400}
                 alt="Pastor Chibuzo Nwanju"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg mx-auto"
               />
             </div>
             <div className="space-y-4">
@@ -47,16 +48,29 @@ export default function About() {
                 The Vision of Pastor Chibuzo Nwanju
               </h3>
               <p className="text-slate-600">
-                The Adjumani Project began with a vision given to Pastor Chibuzo
-                Nwanju. Witnessing the challenges faced by communities in
-                Adjumani, he was moved to create a holistic approach to
-                community transformation through faith, education, and
-                healthcare.
+                The Adjumani Project was birthed out of a deep concern for the
+                health and spiritual well-being of the people in Adjumani,
+                Uganda, a region overwhelmed by hardship. In 2022, during a
+                crusade supported by God’s Family Global Network, Pastor Chibuzo
+                Nwanju witnessed the cries of a people in desperate need. The
+                region’s health facilities were overrun, leaving families dying
+                from preventable diseases such as malaria and diabetes due to a
+                lack of medical supplies and resources. Additionally, the influx
+                of South Sudanese refugees fleeing civil war had created an
+                unsustainable strain on the local infrastructure, plunging the
+                community into extreme poverty and despair.
               </p>
               <p className="text-slate-600">
-                What started as a small initiative has grown into a beacon of
-                hope for the region, touching countless lives and fostering
-                sustainable change in the community.
+                Adjumani has become a refuge for war-torn families, yet it
+                remains a region burdened by physical, emotional, and spiritual
+                wounds. Many live without access to basic medical care, and
+                countless souls remain unreached with the Gospel of Jesus
+                Christ. The Bridge Kingdom Access Network has embraced this
+                challenge by launching the Adjumani Project. Its goal is to
+                bring light to this dark region through the construction of a
+                Soul Center, which will provide healthcare, education, and
+                spiritual empowerment to restore the faith of this bleeding
+                region.
               </p>
             </div>
           </div>
@@ -64,7 +78,7 @@ export default function About() {
       </section>
 
       {/* Vision and Values Section */}
-      <section className="py-16 px-6 bg-slate-50 h-screen">
+      <section className="py-16 px-6 bg-slate-50">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-12">
             Our Vision & Values
@@ -101,7 +115,10 @@ export default function About() {
                 description: 'Striving for the highest standards in all we do',
               },
             ].map((value, index) => (
-              <Card key={index} className="bg-white">
+              <Card
+                key={index}
+                className="bg-white hover:shadow-lg transition-shadow duration-300"
+              >
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
                   <p className="text-slate-600">{value.description}</p>
@@ -113,7 +130,7 @@ export default function About() {
       </section>
 
       {/* Leadership Team Section */}
-      <section className="py-16 px-6 bg-gray h-screen ">
+      <section className="py-16 px-6 bg-gray-100">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-12 pt-30">
             Our Leadership Team
@@ -145,7 +162,7 @@ export default function About() {
       </section>
 
       {/* Scripture Section */}
-      <section className="py-16 px-6 bg-slate-900 text-white h-screen">
+      <section className="py-16 px-6 bg-slate-900 text-white">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-12">
             Our Scriptural Foundation
