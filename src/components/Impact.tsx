@@ -5,7 +5,7 @@ import { Play } from 'lucide-react';
 
 const Impact = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-50 dark:bg-slate-900">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-50 dark:bg-slate-900 h-screen">
       <div className="container mx-auto px-4 md:px-6">
         {/* Heading */}
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
@@ -95,19 +95,7 @@ const Impact = () => {
           </Card>
         </div>
 
-        {/* Call to Action */}
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h3 className="text-2xl font-bold tracking-tighter md:text-3xl">
-            Ready to Make a Difference?
-          </h3>
-          <p className="max-w-[600px] text-muted-foreground md:text-xl leading-relaxed">
-            Join our community of changemakers and help us create lasting
-            impact.
-          </p>
-          <Button size="lg" className="mt-4">
-            Get Involved Today
-          </Button>
-        </div>
+     
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-[80vh] flex items-center justify-center">
+    <div className="relative min-h-[80vh] flex items-center h-screen justify-center">
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0"

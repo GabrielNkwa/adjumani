@@ -1,3 +1,4 @@
+import Action from '@/components/Action';
 import HeroSection from '@/components/HeroSection';
 import Impact from '@/components/Impact';
 import Introduction from '@/components/Introduction';
@@ -9,6 +10,7 @@ function Home() {
       <HeroSection />
       <Introduction />
       <Impact/>
+      <Action/>
     </>
   );
 }
