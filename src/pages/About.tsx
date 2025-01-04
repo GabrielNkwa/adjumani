@@ -3,19 +3,14 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Quote } from 'lucide-react';
 import { Link } from 'react-router-dom'; // Use react-router for navigation
+import HeroSection from '@/components/HeroSection';
 
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative py-24 px-6 bg-slate-900 text-white overflow-hidden h-screen">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/placeholder.svg?height=600&width=1200"
-            alt="Background"
-            className="object-cover opacity-20 w-full h-full"
-          />
-        </div>
+        <HeroSection />
         <div className="container relative z-10 mx-auto max-w-5xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-40">
             Mission Statement
@@ -36,7 +31,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="/images/pastor.png"
                 width={400}
                 height={400}
                 alt="Pastor Chibuzo Nwanju"

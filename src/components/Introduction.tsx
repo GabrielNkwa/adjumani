@@ -1,82 +1,56 @@
+import { Heart, GraduationCap, Cross } from 'lucide-react';
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Heart, GraduationCap } from 'lucide-react';
+import { Card, CardContent } from './ui/card';
 
 const Introduction = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-gray-50 h-screen items-center align-center">
-      <div className="container mx-auto px-4 md:px-6">
-        {/* Hero Section */}
-        <div className="flex flex-col items-center text-center space-y-4 mb-12 md:mb-20">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-            Transforming Lives Through Faith & Service
-          </h1>
-          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-            Our mission is to create lasting positive change through three
-            fundamental pillars: Healthcare, Education, and Soul-Winning.
-            Together, we're building a stronger, healthier, and more spiritually
-            enriched community.
+    <section className="py-16 md:py-24 bg-background flex flex-col items-center">
+      <div className="container px-4 md:px-6 text-center">
+        <div className="max-w-3xl mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Mission Statement
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            To transform Adjumani into a haven of hope by providing holistic
+            care through healthcare, education, and spiritual empowerment,
+            bringing healing to physical, emotional, and spiritual wounds while
+            winning souls for Jesus Christ.
           </p>
         </div>
 
-        {/* Pillars Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
-          {/* Healthcare Pillar */}
-          <Card className="relative overflow-hidden">
-            <CardContent className="p-6">
-              <div className="flex flex-col items-center space-y-4">
-                <div className="p-3 rounded-full bg-red-100">
-                  <Heart className="w-6 h-6 text-red-500" />
-                </div>
-                <h3 className="text-xl font-bold">Healthcare</h3>
-                <p className="text-center text-gray-500 dark:text-gray-400">
-                  Providing accessible, quality healthcare services to
-                  underserved communities, ensuring physical well-being for all.
-                </p>
-              </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <Card className="relative group hover:shadow-lg transition-shadow">
+            <CardContent className="p-6 text-center space-y-4">
+              <Heart className="w-12 h-12 mx-auto text-primary" />
+              <h3 className="text-xl font-bold">Healthcare</h3>
+              <p className="text-muted-foreground">
+                Providing essential medical services and promoting community
+                health through preventive care and education.
+              </p>
             </CardContent>
           </Card>
 
-          {/* Education Pillar */}
-          <Card className="relative overflow-hidden">
-            <CardContent className="p-6">
-              <div className="flex flex-col items-center space-y-4">
-                <div className="p-3 rounded-full bg-blue-100">
-                  <GraduationCap className="w-6 h-6 text-blue-500" />
-                </div>
-                <h3 className="text-xl font-bold">Education</h3>
-                <p className="text-center text-gray-500 dark:text-gray-400">
-                  Empowering individuals through knowledge and skills
-                  development, creating pathways to better opportunities.
-                </p>
-              </div>
+          <Card className="relative group hover:shadow-lg transition-shadow">
+            <CardContent className="p-6 text-center space-y-4">
+              <GraduationCap className="w-12 h-12 mx-auto text-primary" />
+              <h3 className="text-xl font-bold">Education</h3>
+              <p className="text-muted-foreground">
+                Empowering the next generation through quality education and
+                skills development programs.
+              </p>
             </CardContent>
           </Card>
 
-          {/* Soul-Winning Pillar */}
-          <Card className="relative overflow-hidden">
-            <CardContent className="p-6">
-              <div className="flex flex-col items-center space-y-4">
-                <div className="p-3 rounded-full bg-purple-100">
-                  <Heart className="w-6 h-6 text-purple-500" />
-                </div>
-                <h3 className="text-xl font-bold">Soul-Winning</h3>
-                <p className="text-center text-gray-500 dark:text-gray-400">
-                  Spreading hope and spiritual guidance through faith-based
-                  initiatives, nurturing the spiritual well-being of our
-                  community.
-                </p>
-              </div>
+          <Card className="relative group hover:shadow-lg transition-shadow">
+            <CardContent className="p-6 text-center space-y-4">
+              <Cross className="w-12 h-12 mx-auto text-primary" />
+              <h3 className="text-xl font-bold">Soul-Winning</h3>
+              <p className="text-muted-foreground">
+                Sharing hope and faith while nurturing spiritual growth within
+                the community.
+              </p>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Call to Action */}
-        <div className="mt-12 text-center">
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Join Our Mission
-          </Button>
         </div>
       </div>
     </section>

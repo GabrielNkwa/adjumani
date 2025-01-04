@@ -226,9 +226,9 @@ export default function Involved() {
       </section>
 
       {/* Impact Stories Section */}
-      <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 bg-muted">
+      <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 bg-muted mb-30 ">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mt-10">
             Impact Stories
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -243,7 +243,7 @@ export default function Involved() {
                       alt={`Impact story ${story}`}
                       className="aspect-video overflow-hidden rounded-lg object-cover"
                       height="225"
-                      src={`/placeholder.svg?height=225&width=400`}
+                      src={`/images/image5.jpg`}
                       width="400"
                     />
                     <h3 className="text-xl font-bold">Making a Difference</h3>
@@ -261,7 +261,7 @@ export default function Involved() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
+      <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground mt-10">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Become a Partner Today!
@@ -273,9 +273,6 @@ export default function Involved() {
           <div className="space-x-4 mt-6">
             <Button variant="secondary" size="lg">
               Make a Donation
-            </Button>
-            <Button variant="outline" size="lg">
-              Contact Us
             </Button>
           </div>
         </div>

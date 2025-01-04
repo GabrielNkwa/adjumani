@@ -6,207 +6,317 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { TabsContent, TabsList, TabsTrigger, Tabs } from '@/components/ui/tabs';
-import { Heart, GraduationCap, Stethoscope } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import {
+  Baby,
+  GraduationCap,
+  Heart,
+  Users,
+  Activity,
+  Calendar,
+  School,
+} from 'lucide-react';
 
-export default function Works() {
+export default function ServicesPage() {
   return (
-    <main className="container mx-auto px-4 py-12 h-screen pt-40">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="mb-12 text-center">
-        <h1 className="text-4xl font-bold tracking-tight mb-4">
-          The Adjumani Soul Center: A Beacon of Hope
-        </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          The Adjumani Soul Center is a comprehensive facility designed to
-          address the urgent needs of the region. It combines medical care,
-          spiritual training, and public health resources to create a
-          sustainable solution for the challenges faced by the people of
-          Adjumani. The center will include:
-        </p>
-      </div>
-
-      {/* Services Grid */}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
-        {/* Maternity Center Card */}
-        <Card className="relative overflow-hidden">
-          <CardHeader>
-            <div className="mb-4">
-              <Heart className="h-8 w-8 text-primary" />
-            </div>
-            <CardTitle>Maternity & Child Delivery Center</CardTitle>
-            <CardDescription>
-              To provide accessible and life-saving maternal and child
-              healthcare services, addressing the region’s high maternal and
-              infant mortality rates.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <img
-                src="/placeholder.svg?height=200&width=400"
-                width={400}
-                height={200}
-                alt="Maternity center facilities"
-                className="rounded-lg object-cover w-full mb-4"
-              />
-              <ul className="space-y-2">
-                <li>• Capacity to Care for 50-100 Maternity Patients</li>
-                <li>• C-Section and Emergency Surgery Capabilities</li>
-                <li>• Postnatal and Prenatal Care</li>
-                <li>• Educational and Family Planning Programs</li>
-              </ul>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Bible College Card */}
-        <Card>
-          <CardHeader>
-            <div className="mb-4">
-              <GraduationCap className="h-8 w-8 text-primary" />
-            </div>
-            <CardTitle>Soul Winners Bible College</CardTitle>
-            <CardDescription>
-              To train and equip individuals to become evangelists and
-              ministers, spreading the Gospel and empowering communities through
-              biblical knowledge and spiritual leadership.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <img
-                src="/placeholder.svg?height=200&width=400"
-                width={400}
-                height={200}
-                alt="Bible college campus"
-                className="rounded-lg object-cover w-full mb-4"
-              />
-              <Tabs defaultValue="programs" className="w-full">
-                <TabsList className="grid w-full grid-cols-2">
-                  <TabsTrigger value="programs">Programs</TabsTrigger>
-                  <TabsTrigger value="partnerships">Partnerships</TabsTrigger>
-                </TabsList>
-                <TabsContent value="programs" className="space-y-2">
-                  <ul className="space-y-2">
-                    <li>• Certificate and Diploma Programs</li>
-                    <li>• Short Courses</li>
-                    <li>• Affiliations with Online Universities</li>
-                  </ul>
-                </TabsContent>
-                <TabsContent value="partnerships" className="space-y-2">
-                  <ul className="space-y-2">
-                    <li>• International Bible Universities</li>
-                    <li>• Local Church Networks</li>
-                    <li>• Ministry Training Centers</li>
-                    <li>• Global Mission Organizations</li>
-                  </ul>
-                </TabsContent>
-              </Tabs>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Medical Center Card */}
-        <Card>
-          <CardHeader>
-            <div className="mb-4">
-              <Stethoscope className="h-8 w-8 text-primary" />
-            </div>
-            <CardTitle>Malaria & Diabetes Resource Center</CardTitle>
-            <CardDescription>
-              To combat the region’s overwhelming burden of malaria and diabetes
-              through education, prevention, and treatment.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <img
-                src="/placeholder.svg?height=200&width=400"
-                width={400}
-                height={200}
-                alt="Medical center facilities"
-                className="rounded-lg object-cover w-full mb-4"
-              />
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div className="text-center p-4 bg-muted rounded-lg">
-                  <div className="text-2xl font-bold">5,000+</div>
-                  <div className="text-sm text-muted-foreground">
-                    Patients treated
-                  </div>
-                </div>
-                <div className="text-center p-4 bg-muted rounded-lg">
-                  <div className="text-2xl font-bold">80%</div>
-                  <div className="text-sm text-muted-foreground">
-                    Prevention rate
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-2">
-                <h4 className="font-semibold">Our Services:</h4>
-                <ul className="space-y-2">
-                  <li>• Diagnosis and Treatment</li>
-                  <li>• Prevention Programs</li>
-                  <li>• Emergency Response Unit</li>
-                  <li>• Health Education Campaigns</li>
-                  <li>• Medication Distribution</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Impact Section */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold text-center mb-8">Our Impact</h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          <div className="text-center p-6 bg-muted rounded-lg">
-            <div className="text-4xl font-bold mb-2">15,000+</div>
-            <div className="text-muted-foreground">Lives impacted annually</div>
-          </div>
-          <div className="text-center p-6 bg-muted rounded-lg">
-            <div className="text-4xl font-bold mb-2">200+</div>
-            <div className="text-muted-foreground">
-              Trained community leaders
-            </div>
-          </div>
-          <div className="text-center p-6 bg-muted rounded-lg">
-            <div className="text-4xl font-bold mb-2">95%</div>
-            <div className="text-muted-foreground">
-              Community satisfaction rate
-            </div>
-          </div>
+      <section className="relative h-[400px] overflow-hidden">
+        <img
+          src="/images/image9.jpg"
+          alt="Adjumani Project Hero"
+          width={1920}
+          height={400}
+          className="object-cover brightness-50"
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            The Adjumani Project Services
+          </h1>
+          <p className="text-lg md:text-xl max-w-2xl">
+            Transforming lives through healthcare, education, and community
+            development in Uganda
+          </p>
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section>
-        <h2 className="text-3xl font-bold text-center mb-8">Our Facilities</h2>
-        <div className="grid gap-4 md:grid-cols-3">
-          <img
-            src="/placeholder.svg?height=300&width=400"
-            width={400}
-            height={300}
-            alt="Facility image 1"
-            className="rounded-lg object-cover w-full"
-          />
-          <img
-            src="/placeholder.svg?height=300&width=400"
-            width={400}
-            height={300}
-            alt="Facility image 2"
-            className="rounded-lg object-cover w-full"
-          />
-          <img
-            src="/placeholder.svg?height=300&width=400"
-            width={400}
-            height={300}
-            alt="Facility image 3"
-            className="rounded-lg object-cover w-full"
-          />
-        </div>
-      </section>
-    </main>
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-12">
+        {/* Services Tabs */}
+        <Tabs defaultValue="maternity" className="space-y-8">
+          <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 h-auto">
+            <TabsTrigger
+              value="maternity"
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-4"
+            >
+              Maternity & Child Delivery
+            </TabsTrigger>
+            <TabsTrigger
+              value="bible-college"
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-4"
+            >
+              Soul Winners Bible College
+            </TabsTrigger>
+            <TabsTrigger
+              value="healthcare"
+              className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-4"
+            >
+              Malaria & Diabetes Center
+            </TabsTrigger>
+          </TabsList>
+
+          {/* Maternity Center Content */}
+          <TabsContent value="maternity" className="space-y-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">
+                  Maternity and Child Delivery Center
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  Providing comprehensive maternal care services to ensure safe
+                  deliveries and healthy mothers and babies in the Adjumani
+                  region.
+                </p>
+                <div className="grid gap-4">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Baby className="h-5 w-5" />
+                        Emergency Services
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      24/7 emergency C-section capabilities and critical care
+                      for high-risk pregnancies
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Calendar className="h-5 w-5" />
+                        Prenatal & Postnatal Care
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Regular check-ups, ultrasound services, and comprehensive
+                      postnatal support
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Heart className="h-5 w-5" />
+                        Family Planning
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Counseling and access to various family planning methods
+                      and reproductive health services
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <img
+                  src="/images/image10.jpg"
+                  alt="Maternity Center"
+                  width={500}
+                  height={300}
+                  className="rounded-lg object-cover w-full"
+                />
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>1,200+</CardTitle>
+                      <CardDescription>Safe Deliveries</CardDescription>
+                    </CardHeader>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>98%</CardTitle>
+                      <CardDescription>Survival Rate</CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
+
+          {/* Bible College Content */}
+          <TabsContent value="bible-college" className="space-y-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">
+                  Soul Winners Bible College
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  Training the next generation of spiritual leaders and
+                  community developers through comprehensive biblical education
+                  and practical ministry experience.
+                </p>
+                <div className="grid gap-4">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <GraduationCap className="h-5 w-5" />
+                        Degree Programs
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Bachelor's and Master's programs in Theology, Ministry,
+                      and Community Development
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <School className="h-5 w-5" />
+                        International Partnerships
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Collaborations with accredited universities worldwide for
+                      enhanced learning opportunities
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Users className="h-5 w-5" />
+                        Community Impact
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Practical ministry experience through community outreach
+                      and evangelism programs
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <img
+                  src="/images/image1.jpg"
+                  alt="Bible College"
+                  width={500}
+                  height={300}
+                  className="rounded-lg object-cover w-full"
+                />
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>500+</CardTitle>
+                      <CardDescription>Graduates</CardDescription>
+                    </CardHeader>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>15</CardTitle>
+                      <CardDescription>Partner Universities</CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
+
+          {/* Healthcare Center Content */}
+          <TabsContent value="healthcare" className="space-y-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">
+                  Malaria & Diabetes Resource Center
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  Comprehensive care and prevention programs for malaria and
+                  diabetes, serving the Adjumani community through treatment and
+                  education.
+                </p>
+                <div className="grid gap-4">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Activity className="h-5 w-5" />
+                        Treatment Services
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      State-of-the-art diagnosis and treatment facilities for
+                      malaria and diabetes
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Users className="h-5 w-5" />
+                        Prevention Programs
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Community education and prevention campaigns, including
+                      mosquito net distribution
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Heart className="h-5 w-5" />
+                        Ongoing Care
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Regular check-ups and medication management for diabetes
+                      patients
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <img
+                  src="/images/image13.jpg"
+                  alt="Healthcare Center"
+                  width={500}
+                  height={300}
+                  className="rounded-lg object-cover w-full"
+                />
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>5,000+</CardTitle>
+                      <CardDescription>Patients Treated</CardDescription>
+                    </CardHeader>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>40%</CardTitle>
+                      <CardDescription>
+                        Reduction in Malaria Cases
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
+        </Tabs>
+
+        {/* Call to Action */}
+        <section className="mt-16 text-center">
+          <h2 className="text-3xl font-bold mb-4">Support Our Mission</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Your support helps us continue providing essential services to the
+            Adjumani community. Join us in making a difference.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="min-w-[200px]">
+              Donate Now
+            </Button>
+            <Button size="lg" variant="outline" className="min-w-[200px]">
+              Volunteer
+            </Button>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
