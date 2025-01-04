@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 
 const HomeHero = () => {
   return (
@@ -9,6 +9,7 @@ const HomeHero = () => {
         alt="Adjumani Community"
         className="object-cover brightness-50 w-full h-full"
       />
+
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">

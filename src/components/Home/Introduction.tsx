@@ -1,6 +1,6 @@
 import { Heart, GraduationCap, Cross } from 'lucide-react';
 import React from 'react';
-import { Card, CardContent } from './ui/card';
+import { Card, CardContent } from '../ui/card';
 
 const Introduction = () => {
   return (
