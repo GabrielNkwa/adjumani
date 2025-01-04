@@ -9,16 +9,13 @@ const VideoGrid = ({ videos }) => {
             <video
               className="h-full w-full object-cover"
               controls
-              poster="/placeholder.svg?height=400&width=600"
+             
             >
               <source src={video.src} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity hover:opacity-100">
-              <div className="text-center text-white">
-                <h3 className="text-xl font-bold">{video.title}</h3>
-                <p className="mt-2">Click to play</p>
-              </div>
+             
             </div>
           </div>
         ))}
