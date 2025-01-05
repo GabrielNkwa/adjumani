@@ -9,11 +9,13 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Works from './pages/Works';
 import Involved from './pages/Involved';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
