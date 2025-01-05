@@ -21,12 +21,6 @@ export default function Footer() {
                 <span className="sr-only">Twitter</span>
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
-                <Github className="size-4" />
-                <span className="sr-only">GitHub</span>
-              </a>
-            </Button>
           </div>
         </div>
         <Separator />

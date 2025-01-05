@@ -31,7 +31,7 @@ export default function Involved() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
+      <section className="flex items-center justify-center  py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
             Make a Difference Today
@@ -54,7 +54,7 @@ export default function Involved() {
       {/* Ways to Give Section */}
       <section
         id="donate"
-        className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32"
+        className="flex items-center justify-center py-12 md:py-24 lg:py-32"
       >
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -143,7 +143,7 @@ export default function Involved() {
       {/* Volunteer Opportunities Section */}
       <section
         id="volunteer"
-        className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 bg-muted"
+        className="flex items-center justify-center  py-12 md:py-24 lg:py-32 bg-muted"
       >
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -186,7 +186,7 @@ export default function Involved() {
       </section>
 
       {/* Partnership Section */}
-      <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32">
+      <section className="flex items-center justify-center  py-12 md:py-24 lg:py-32">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Partnership Opportunities
@@ -226,7 +226,7 @@ export default function Involved() {
       </section>
 
       {/* Impact Stories Section */}
-      <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 bg-muted mb-30 ">
+      <section className="flex items-center justify-center  py-12 md:py-24 lg:py-32 bg-muted mb-30 ">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mt-10">
             Impact Stories
@@ -261,7 +261,7 @@ export default function Involved() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="flex items-center justify-center w-full h-screen py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground mt-10">
+      <section className="flex items-center justify-center  py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground mt-10">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Become a Partner Today!
