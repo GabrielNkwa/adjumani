@@ -20,7 +20,7 @@ import {
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-200">
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <img
@@ -301,7 +301,7 @@ export default function ServicesPage() {
         </Tabs>
 
         {/* Call to Action */}
-        <section className="mt-16 text-center">
+        <section className="mt-16 text-center ">
           <h2 className="text-3xl font-bold mb-4">Support Our Mission</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Your support helps us continue providing essential services to the

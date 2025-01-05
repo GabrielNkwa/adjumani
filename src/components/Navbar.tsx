@@ -10,65 +10,75 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 z-50 w-full bg-black text-white">
       <div className="mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4 md:px-8">
-        {/* Mobile Menu Button */}
-        <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="text-white hover:bg-white/10"
-            >
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">ADJUMANI</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="w-full bg-black p-0">
-            <div className="flex h-full flex-col items-center justify-center gap-6 text-white">
-              <Link
-                to="/"
-                className="text-2xl font-semibold transition-colors hover:text-white/80"
-                onClick={() => setOpen(false)}
+        {/* Mobile Menu Button and Brand Name */}
+        <div className="flex w-full justify-between items-center md:hidden">
+          <Link to="/" className="text-xl font-bold pl-2">
+            ADJUMANI
+          </Link>
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-white hover:bg-white/10"
               >
-                Home
-              </Link>
-              <Link
-                to="/about"
-                className="text-2xl font-semibold transition-colors hover:text-white/80"
-                onClick={() => setOpen(false)}
+                <Menu className="h-6 w-6" />
+                <span className="flex-1 sr-only">Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-full bg-black p-0">
+              <div
+                className={`flex h-full flex-col items-center justify-center gap-6 text-white transition-opacity duration-300 ${
+                  open ? 'opacity-100' : 'opacity-0'
+                }`}
+                style={{ visibility: open ? 'visible' : 'hidden' }}
               >
-                About
-              </Link>
-              <Link
-                to="/works"
-                className="text-2xl font-semibold transition-colors hover:text-white/80"
-                onClick={() => setOpen(false)}
-              >
-                Our Works
-              </Link>
-              <Link
-                to="/involved"
-                className="text-2xl font-semibold transition-colors hover:text-white/80"
-                onClick={() => setOpen(false)}
-              >
-                Get Involved
-              </Link>
-              <Link
-                to="/contact"
-                className="text-2xl font-semibold transition-colors hover:text-white/80"
-                onClick={() => setOpen(false)}
-              >
-                Contact
-              </Link>
-            </div>
-          </SheetContent>
-        </Sheet>
+                <Link
+                  to="/"
+                  className="text-2xl font-semibold transition-colors hover:text-white/80"
+                  onClick={() => setOpen(false)}
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/about"
+                  className="text-2xl font-semibold transition-colors hover:text-white/80"
+                  onClick={() => setOpen(false)}
+                >
+                  About
+                </Link>
+                <Link
+                  to="/works"
+                  className="text-2xl font-semibold transition-colors hover:text-white/80"
+                  onClick={() => setOpen(false)}
+                >
+                  Our Works
+                </Link>
+                <Link
+                  to="/involved"
+                  className="text-2xl font-semibold transition-colors hover:text-white/80"
+                  onClick={() => setOpen(false)}
+                >
+                  Get Involved
+                </Link>
+                <Link
+                  to="/contact"
+                  className="text-2xl font-semibold transition-colors hover:text-white/80"
+                  onClick={() => setOpen(false)}
+                >
+                  Contact
+                </Link>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
 
         {/* Desktop Navigation */}
-        <div className="flex w-full items-center justify-center gap-8">
+        <div className="hidden md:flex md:justify-center md:gap-6 w-full">
           <Link to="/" className="text-xl font-bold">
             ADJUMANI
           </Link>
-          <div className="hidden gap-6 md:flex">
+          <div className="flex gap-6">
             <Link
               to="/"
               className="font-medium transition-colors hover:text-white/80"
