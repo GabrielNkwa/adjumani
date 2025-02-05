@@ -47,22 +47,22 @@ const Action = () => {
           Adjumani. Every contribution makes a difference.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
+          {/* <Button
             size="lg"
             variant="secondary"
             className="bg-background text-foreground hover:bg-background/90"
           >
             Learn More
             <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button
+          </Button> */}
+          {/* <Button
             size="lg"
             variant="secondary"
             className="bg-background text-foreground hover:bg-background/90"
           >
             Volunteer
             <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          </Button> */}
           <Button
             size="lg"
             variant="secondary"
