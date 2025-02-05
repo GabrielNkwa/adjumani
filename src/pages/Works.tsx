@@ -311,9 +311,9 @@ export default function ServicesPage() {
             <Button size="lg" className="min-w-[200px]">
               Donate Now
             </Button>
-            <Button size="lg" variant="outline" className="min-w-[200px]">
+            {/* <Button size="lg" variant="outline" className="min-w-[200px]">
               Volunteer
-            </Button>
+            </Button> */}
           </div>
         </section>
       </main>

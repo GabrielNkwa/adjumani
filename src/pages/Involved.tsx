@@ -44,9 +44,9 @@ export default function Involved() {
             <Button variant="secondary" size="lg" asChild>
               <Link to="#donate">Donate Now</Link>
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            {/* <Button variant="outline" size="lg" asChild>
               <Link to="#volunteer">Volunteer</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
