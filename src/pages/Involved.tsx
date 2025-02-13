@@ -42,7 +42,7 @@ export default function Involved() {
           </p>
           <div className="space-x-4 mt-6">
             <Button variant="secondary" size="lg" asChild>
-              <Link to="#donate">Donate Now</Link>
+              <Link to="https://www.zeffy.com/donation-form/donate-to-make-a-difference-8715" target="_blank" rel="noopener noreferrer">Donate Now</Link>
             </Button>
             {/* <Button variant="outline" size="lg" asChild>
               <Link to="#volunteer">Volunteer</Link>
@@ -52,7 +52,7 @@ export default function Involved() {
       </section>
 
       {/* Ways to Give Section */}
-      <section
+      {/* <section
         id="donate"
         className="flex items-center justify-center py-12 md:py-24 lg:py-32"
       >
@@ -101,7 +101,11 @@ export default function Involved() {
                         ))}
                       </RadioGroup>
                     </div>
+                    <a href="https://www.zeffy.com/donation-form/donate-to-make-a-difference-8715" target="_blank" rel="noopener noreferrer">
+         
+         
                     <Button className="w-full">Donate Now</Button>
+                    </a>
                   </form>
                 </CardContent>
               </Card>
@@ -138,7 +142,7 @@ export default function Involved() {
             </TabsContent>
           </Tabs>
         </div>
-      </section>
+      </section> */}
 
       {/* Volunteer Opportunities Section */}
       <section
@@ -271,9 +275,13 @@ export default function Involved() {
             lives.
           </p>
           <div className="space-x-4 mt-6">
+          <a href="https://www.zeffy.com/donation-form/donate-to-make-a-difference-8715" target="_blank" rel="noopener noreferrer">
+          
+      
             <Button variant="secondary" size="lg">
               Make a Donation
-            </Button>
+            </Button>    </a>
+
           </div>
         </div>
       </section>

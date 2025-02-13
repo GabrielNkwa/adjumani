@@ -49,12 +49,14 @@ const HomeHero = () => {
             Join us in making a lasting impact in the Adjumani community through
             holistic development and spiritual growth.
           </p>
+          <a href="https://www.zeffy.com/donation-form/donate-to-make-a-difference-8715" target="_blank" rel="noopener noreferrer">
           <Button
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground"
           >
             Donate Now
           </Button>
+          </a>
         </div>
       </div>
     </section>

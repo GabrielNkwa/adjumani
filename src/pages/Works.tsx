@@ -308,9 +308,11 @@ export default function ServicesPage() {
             Adjumani community. Join us in making a difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://www.zeffy.com/donation-form/donate-to-make-a-difference-8715" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="min-w-[200px]">
               Donate Now
             </Button>
+            </a>
             {/* <Button size="lg" variant="outline" className="min-w-[200px]">
               Volunteer
             </Button> */}
