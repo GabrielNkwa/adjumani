@@ -44,9 +44,9 @@ export default function Involved() {
             <Button variant="secondary" size="lg" asChild>
               <Link to="https://www.zeffy.com/donation-form/donate-to-make-a-difference-8715" target="_blank" rel="noopener noreferrer">Donate Now</Link>
             </Button>
-            {/* <Button variant="outline" size="lg" asChild>
-              <Link to="#volunteer">Volunteer</Link>
-            </Button> */}
+            <Button variant="outline" size="lg" asChild>
+              <Link to="https://forms.zohopublic.com/mikenwanjugm1/form/VolunteerForm/formperma/aJwupQ9fZr1Zq-ZQ9vBrJiJdEV9QazEta5Cr-eem7AU">Volunteer</Link>
+            </Button>
           </div>
         </div>
       </section>
