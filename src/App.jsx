@@ -7,12 +7,17 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Modal from 'react-modal';
 import Works from './pages/Works';
 import Involved from './pages/Involved';
 import ScrollToTop from './components/ScrollToTop';
 
+Modal.setAppElement('#root');
+
 const App = () => {
   return (
+    <div id='root'>
+
     <Router>
       <Navbar />
       <ScrollToTop />
@@ -26,6 +31,7 @@ const App = () => {
         </Routes>
       </Layout>
     </Router>
+    </div>
   );
 };
 

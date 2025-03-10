@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import Modal from 'react-modal';
+import Slider from 'react-slick';
 import { Button } from '../ui/button';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const HomeHero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +27,19 @@ const HomeHero = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true, // Autoplay the slideshow
+    autoplaySpeed: 3000 // Change slide every 3 seconds
+  };
 
   return (
     <section id="home-hero" className="relative h-[80vh] min-h-[600px] w-full">
@@ -49,16 +67,90 @@ const HomeHero = () => {
             Join us in making a lasting impact in the Adjumani community through
             holistic development and spiritual growth.
           </p>
-          <a href="https://www.zeffy.com/donation-form/donate-to-make-a-difference-8715" target="_blank" rel="noopener noreferrer">
-          <Button
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground"
-          >
-            Donate Now
-          </Button>
-          </a>
+          <div className="flex space-x-4 items-center justify-center">
+            <a href="https://www.zeffy.com/donation-form/donate-to-make-a-difference-8715" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              >
+                Donate Now
+              </Button>
+            </a>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              onClick={openModal}
+            >
+              View Project
+            </Button>
+          </div>
         </div>
       </div>
+
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Project Slideshow"
+        className="modal"
+        overlayClassName="overlay"
+      >
+        <button onClick={closeModal} className="close-modal">
+          Close
+        </button>
+        <Slider {...settings}>
+          <div>
+            <img src="/images/adj/adj1.jpg" alt="Project 1" />
+          </div>
+          <div>
+            <img src="/images/adj/adj2.jpg" alt="Project 2" />
+          </div>
+          <div>
+            <img src="/images/adj/adj3.jpg" alt="Project 3" />
+          </div>
+          <div>
+            <img src="/images/adj/adj4.jpg" alt="Project 4" />
+          </div>
+          <div>
+            <img src="/images/adj/adj5.jpg" alt="Project 5" />
+          </div>
+          <div>
+            <img src="/images/adj/adj6.jpg" alt="Project 6" />
+          </div>
+          <div>
+            <img src="/images/adj/adj7.jpg" alt="Project 7" />
+          </div>
+          <div>
+            <img src="/images/adj/adj8.jpg" alt="Project 8" />
+          </div>
+          <div>
+            <img src="/images/adj/adj9.jpg" alt="Project 9" />
+          </div>
+          <div>
+            <img src="/images/adj/adj10.jpg" alt="Project 10" />
+          </div>
+          <div>
+            <img src="/images/adj/adj11.jpg" alt="Project 11" />
+          </div>
+          <div>
+            <img src="/images/adj/adj12.jpg" alt="Project 12" />
+          </div>
+          <div>
+            <img src="/images/adj/adj13.jpg" alt="Project 13" />
+          </div>
+          <div>
+            <img src="/images/adj/adj14.jpg" alt="Project 14" />
+          </div>
+          <div>
+            <img src="/images/adj/adj15.jpg" alt="Project 15" />
+          </div>
+          <div>
+            <img src="/images/adj/adj16.jpg" alt="Project 16" />
+          </div>
+          <div>
+            <img src="/images/adj/adj17.jpg" alt="Project 17" />
+          </div>
+        </Slider>
+      </Modal>
     </section>
   );
 };

@@ -117,3 +117,43 @@
 .slide-in {
   animation: slideIn 1s forwards; /* Adjust duration as needed */
 }
+
+
+.modal {
+  /* background: white; */
+  padding: 20px;
+  width: 90vw; /* Make the modal wider */
+  max-width: 1200px; /* Ensure the modal fits within the viewport */
+  height: auto; /* Adjust height based on image size */
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 2rem; /* Make the close button larger */
+  cursor: pointer;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 2rem; /* Make the navigation controls larger */
+  color: black; /* Change control color */
+}
+

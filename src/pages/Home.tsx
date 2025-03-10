@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from 'react-modal';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, GraduationCap, Cross, ArrowRight } from 'lucide-react';
@@ -9,6 +10,9 @@ import Introduction from '@/components/Home/Introduction';
 import HomeHero from '@/components/Home/HomeHero';
 import AdjumaniCenter from '@/components/Home/AdjumaniCenter';
 import VideoGrid from '@/components/VideoGrid';
+
+
+
 
 export default function Page() {
   const videos = [
